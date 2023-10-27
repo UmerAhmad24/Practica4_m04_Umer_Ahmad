@@ -1,0 +1,65 @@
+h1{
+/*Pone el titulo en naranja*/
+    color: orange;
+}
+
+body{
+/*El fondo del formulariocpasa a ser el que indicamos*/
+    background-color: #DED1C2;
+}
+
+.button{
+/*El color de boton enviar y volver pasa a ser:
+de color naranja con una anchura  de 100px y una altura de 50px */    
+    background-color:  orange;
+    width: 100px;
+    height: 50px;
+}
+.button:hover{
+    /* Cuando nos ponemos encima del boton de pone del color rojo*/
+    background-color: red;
+}
+
+.email{
+    /* La caja donde ponemos el correo electronico pasa a ser: 
+    una anchura de 300 pixeles y con un margen a la izquierda
+    de 104 pixeles y una separacion entre boton y boton de 5px*/
+    width: 300px;
+    margin-left: 104px;
+    margin-bottom: 5px;
+    
+}
+.email:focus{
+    background-color: rgb(94, 255, 0);
+}
+.nom{
+/*La caja donde ponemos el nombre e apellido  pasa a ser: 
+    una anchura de 300 pixeles y con un margen a la izquierda
+    de 40 pixeles y una separacion entre boton y boton de 5px*/
+    width: 300px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+/*si clicas encima sobre la caja se pondra este color*/
+.nom:focus{
+    background-color: rgb(0, 255, 119);
+}
+
+#edat{
+/* La caja donde ponemos la edad pasa a ser: 
+    una anchura de 100 pixeles y con un margen a la izquierda
+    de 112 pixeles y una separacion entre boton y boton de 5px*/
+    width: 100px;
+    margin-left: 112px;
+    margin-bottom: 5px;
+}
+#edat:focus{
+    background-color: rgb(0, 255, 200);
+}
+
+.textarea{
+/* El cuadro de texto pasa a tener un tamaño de un altura de 350px 
+y una anchura de 200px*/
+    width: 350px;
+    height: 200px;
+}

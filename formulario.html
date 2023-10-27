@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <title>Formulari</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="fitxer.css">
+</head>
+
+<body>
+    <!--Titulo de la pagina-->
+    <h1>Subscriu-te al noticiari ITIC Barcelona</h1>
+    <!--Para poner texto en negrita-->
+    <b>Primer, explica'ns qui ets</b>
+<!--EL FORM ES PARA CREAR FORMULARIOS-->
+    <form action="formulari_enviat.html">
+        <label for="Email">Email</label>
+        <!--PARA PEDIR UNA DIRECCION DE CORREO ELECTRONICO-->
+        <input class="email" type="email" id="Email" name="Email" required><br>
+        <label for="nom i congnoms">Nom i cognoms</label>
+        <!--Para pedir un nombre-->
+        <input class="nom" type="text" id="nom i congnoms" name="nom i congnoms" required><br>
+        <label for="Edat">Edat</label>
+        <!--Para pedir un numero-->
+        <input id="edat" type="number" id="Edat" name="Edat" value="Edat" required><br><br>
+        <b>Quin cicle estàs estudiant?</b><br>
+        <!--TE CREA OPCIONES DONDE PUEDES SELECCCIONA SOLO UNA-->
+        <input type="radio" id="Asix" name="Cicle" value="Asix" checked>
+        <lable for="Asix">ASIX</lable><br>
+        <input type="radio" id="DAM" name="Cicle" value="DAM">
+        <label for="DAM">DAM</label><br>
+        <input type="radio" id="DAW" name="Cicle" value="DAW">
+        <label for="DAW">DAW</label><br><br>
+        <!--Te crea un dezplegamiento de dos opciones-->
+        <label for="curs">I en quin curs?</label>
+        <select id="curs" name="curs">
+            <option value="Primer">Primer</option>
+            <option value="Segon">Segon</option>
+
+        </select>
+        <!--El br sirve para dar como un enter un espacio-->
+        <br><br>
+        <b>Marca els temes que vulguis estar semrpe al dia!</b><br><br>
+        <!--Te crea cuatro cajas donde puedes elejir las opciones que quieras o ninguna-->
+        <input type="checkbox" id="Intel·ligència artificial" name="Intel·ligència artificial"
+            value="Intel·ligència artificial">
+        <label for="Intel·ligència artificial">Intel·ligència artificial</label><br>
+        <input type="checkbox" id="Computació quàntica" name="Computació quàntica" value="Computació quàntica">
+        <label for="Computació quàntica">Computació quàntica</label><br>
+        <input type="checkbox" id="Supercomputadors" name="Supercomputadors" value="Supercomputadors">
+        <label for="Supercomputadors">Supercomputadors</label><br>
+        <input type="checkbox" id="Recerca en algorísmia" name="Recerca en algorísmia" value="Recerca en algorísmia">
+        <label for="Recerca en algorísmia">Recerca en algorísmia</label><br><br>
+        <p>Hi ha algun tema més t'interessi? Explica'ns-ho</p>
+        <!--Crea un area del texto para excribir-->
+        <!--Es el texto que pone si no hay nada escrito en cuadro texto una vez puesta una letra desapareze -->
+        <textarea class="textarea" name="mensaje"
+            placeholder="També m'agradaria saber les últimes novetats sobre..."></textarea><br>
+        <input class="button" type="submit" formaction="formulari_enviat.html" value="Subscriu-me">
+    </form>
+
+</body>
+
+</html>
